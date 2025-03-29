@@ -24,19 +24,6 @@ Backend: Prisma, MongoDB, NextAuth (for future authentication)
 
 State Management: React Hook Form
 
-📂 Folder Structure
-
-E:\crud
-│── prisma/          # Prisma Schema & Migrations
-│── src/app/
-│   ├── page.jsx     # Home Page (List of Items)
-│   ├── update/[id]/page.jsx  # Update Item Page
-│   ├── remove/[id]/page.jsx  # Remove Item Page
-│   ├── actions/     # Server Actions for CRUD
-│   ├── components/  # Reusable UI Components
-│── .env             # Environment Variables
-│── package.json     # Dependencies & Scripts
-
 ➕ Add a New Stock Item
 
 Navigate to /
