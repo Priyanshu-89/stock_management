@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+📦 Stock Management System
 
-## Getting Started
+A simple Stock Management System built with Next.js 15, Prisma, and MongoDB. This app allows users to add, update, remove, and view stock items with a clean and responsive UI.
 
-First, run the development server:
+🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+CRUD Operations: Create, Read, Update, and Delete stock items.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next.js App Router: Uses Next.js app directory.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Prisma ORM: Handles database interactions.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+MongoDB: Stores stock item data.
 
-## Learn More
+Server Actions: Uses Next.js Server Actions for efficient updates.
 
-To learn more about Next.js, take a look at the following resources:
+Tailwind CSS: Styled with a modern UI.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🛠 Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Frontend: Next.js 15, React.js, Tailwind CSS
 
-## Deploy on Vercel
+Backend: Prisma, MongoDB, NextAuth (for future authentication)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+State Management: React Hook Form
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📂 Folder Structure
+
+E:\crud
+│── prisma/          # Prisma Schema & Migrations
+│── src/app/
+│   ├── page.jsx     # Home Page (List of Items)
+│   ├── update/[id]/page.jsx  # Update Item Page
+│   ├── remove/[id]/page.jsx  # Remove Item Page
+│   ├── actions/     # Server Actions for CRUD
+│   ├── components/  # Reusable UI Components
+│── .env             # Environment Variables
+│── package.json     # Dependencies & Scripts
+
+➕ Add a New Stock Item
+
+Navigate to /
+
+Fill out the Create Form
+
+Click Save
+
+✏️ Update an Item
+
+Click the Edit Icon on an item
+
+Modify the values
+
+Click Update
+
+❌ Delete an Item
+
+Click the Delete Icon on an item
+
+Confirm the deletion
+
